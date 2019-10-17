@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    h2 Teams
+        ul
+        each team in teams
+            li
+                - var teamUrl = '/teams/' + team.id
+                a(href=teamUrl)= team.name
