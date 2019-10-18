@@ -1,4 +1,15 @@
 extend layout
 
 block content
-    h2= team.name
+    h2= team.name + "   " + team.nickname 
+    img(src="../"+team.teamLogo alt=team.nickname)
+    hr
+    h3= team.location
+    h3= "Stadium: " + team.stadium + " (Capacity: " + team.capacity + ")"
+    h4= "Mascot: " + team.mascot
+    hr
+    h5= "Division Titles: " + team.dTitles
+    hr
+    h5= "Conference Titles: " + team.cTitles
+    hr
+    h5= "National Titles Claimed: " + team.nTitles
