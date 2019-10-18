@@ -5,14 +5,14 @@ block content
         h2 Teams
             .row
                 .col
-                ul West
+                ul.west West
                     each team in teams
                         if team.division === 'West'
                             li
                                 - var teamUrl = '/teams/' + team.id
                                 a(href=teamUrl)= team.name
                 .col
-                ul East
+                ul.east East
                     each team in teams
                         if team.division === 'East'
                             li

@@ -1,4 +1,27 @@
-h1,
-h2 {
+h1 {
     color: red;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+ul.west {
+    text-align: left;
+}
+
+ul.east {
+    text-align: right;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    align-self: center;
 }
